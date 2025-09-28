@@ -1,45 +1,57 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- */
+// Basics understanding of native components and styling
 
-import { NewAppScreen } from '@react-native/new-app-screen';
-import { StatusBar, StyleSheet, useColorScheme, View } from 'react-native';
+import React, { JSX } from "react";
 import {
-  SafeAreaProvider,
-  useSafeAreaInsets,
-} from 'react-native-safe-area-context';
+  View,
+  Text,
+  StyleSheet
+} from "react-native";
+import { SafeAreaView } from 'react-native-safe-area-context';
 
-function App() {
-  const isDarkMode = useColorScheme() === 'dark';
 
-  return (
-    <SafeAreaProvider>
-      <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
-      <AppContent />
-    </SafeAreaProvider>
-  );
-}
-
-function AppContent() {
-  const safeAreaInsets = useSafeAreaInsets();
-
-  return (
-    <View style={styles.container}>
-      <NewAppScreen
-        templateFileName="App.tsx"
-        safeAreaInsets={safeAreaInsets}
-      />
-    </View>
+const App = ():JSX.Element => {
+  return(
+    <SafeAreaView style={styles.container}>
+      <View>
+        <Text>
+          Helllo Mom ❤️😌
+        </Text>
+        <Text>
+          Helllo Mom ❤️😌
+        </Text>
+        <Text>
+          Helllo Mom ❤️😌
+        </Text>
+        <Text>
+          Helllo Mom ❤️😌
+        </Text>
+        <Text>
+          Helllo Mom ❤️😌
+        </Text>
+        <Text>
+          Helllo Mom ❤️😌
+        </Text>
+      </View>
+    </SafeAreaView>
   );
 }
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#ddeaefff',
   },
-});
+  text: {
+    fontSize: 40,   // instead of 800 (800 is way too large)
+    fontWeight: 'bold',
+    textAlign: 'center',
+    margin: 10,
+    height: 100,
+    color: '#89cdf1ff!important',
+  },
+  });
 
-export default App;
+  export {styles}
+  export default App;

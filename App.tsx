@@ -2,36 +2,15 @@
 
 import React, { JSX } from "react";
 import {
-  View,
-  Text,
   StyleSheet
 } from "react-native";
 import { SafeAreaView } from 'react-native-safe-area-context';
-
+import PasswordGenerator from "./src/features/passwordGenerator/index";
 
 const App = ():JSX.Element => {
   return(
     <SafeAreaView style={styles.container}>
-      <View>
-        <Text>
-          Helllo Mom ❤️😌
-        </Text>
-        <Text>
-          Helllo Mom ❤️😌
-        </Text>
-        <Text>
-          Helllo Mom ❤️😌
-        </Text>
-        <Text>
-          Helllo Mom ❤️😌
-        </Text>
-        <Text>
-          Helllo Mom ❤️😌
-        </Text>
-        <Text>
-          Helllo Mom ❤️😌
-        </Text>
-      </View>
+     <PasswordGenerator />
     </SafeAreaView>
   );
 }

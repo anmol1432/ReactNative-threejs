@@ -84,7 +84,21 @@ android {
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_STL=c++_shared"
+            }
+        }
     }
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+            version "3.22.1"
+        }
+    }
+    project.ext.react = [
+        enableHermes: true,  // <- should be true   
+    ]
     signingConfigs {
         debug {
             storeFile file('debug.keystore')

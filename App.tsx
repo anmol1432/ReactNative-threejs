@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#ddeaefff',
+    backgroundColor: '#283236ff',
   },
   text: {
     fontSize: 40,   // instead of 800 (800 is way too large)
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
     height: 100,
-    color: '#89cdf1ff!important',
+    color: '#ffff',
   },
   });
 

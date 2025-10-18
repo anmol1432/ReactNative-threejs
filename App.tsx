@@ -8,13 +8,15 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 import PasswordGenerator from "./src/features/passwordGenerator/index";
 import BackgroundChanger from "./src/features/bgChanger";
 import DiceRolling from "./src/features/diceRolling";
+import CurrencyConvertor from "./src/features/currencyConvertor";
 
 const App = ():JSX.Element => {
   return(
     <SafeAreaView style={styles.container}>
      {/* <PasswordGenerator /> */}
      {/* <BackgroundChanger /> */}
-     <DiceRolling />
+     {/* <DiceRolling /> */}
+     <CurrencyConvertor />
     </SafeAreaView>
   );
 }
@@ -24,7 +26,7 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#283236ff',
+    backgroundColor: '#738085ff',
   },
   text: {
     fontSize: 40,   // instead of 800 (800 is way too large)

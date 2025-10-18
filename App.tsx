@@ -6,13 +6,15 @@ import {
 } from "react-native";
 import { SafeAreaView } from 'react-native-safe-area-context';
 import PasswordGenerator from "./src/features/passwordGenerator/index";
-import BackgroundChanger from "./src/features/bgChanger/BackgroundChanger";
+import BackgroundChanger from "./src/features/bgChanger";
+import DiceRolling from "./src/features/diceRolling";
 
 const App = ():JSX.Element => {
   return(
     <SafeAreaView style={styles.container}>
      {/* <PasswordGenerator /> */}
-     <BackgroundChanger />
+     {/* <BackgroundChanger /> */}
+     <DiceRolling />
     </SafeAreaView>
   );
 }

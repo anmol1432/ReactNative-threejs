@@ -9,6 +9,7 @@ import PasswordGenerator from "./src/features/passwordGenerator/index";
 import BackgroundChanger from "./src/features/bgChanger";
 import DiceRolling from "./src/features/diceRolling";
 import CurrencyConvertor from "./src/features/currencyConvertor";
+import TicTacToe from "./src/features/tictacToe";
 
 const App = ():JSX.Element => {
   return(
@@ -16,7 +17,8 @@ const App = ():JSX.Element => {
      {/* <PasswordGenerator /> */}
      {/* <BackgroundChanger /> */}
      {/* <DiceRolling /> */}
-     <CurrencyConvertor />
+     {/* <CurrencyConvertor /> */}
+     <TicTacToe />
     </SafeAreaView>
   );
 }

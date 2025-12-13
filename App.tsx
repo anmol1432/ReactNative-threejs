@@ -10,6 +10,9 @@ import BackgroundChanger from "./src/features/bgChanger";
 import DiceRolling from "./src/features/diceRolling";
 import CurrencyConvertor from "./src/features/currencyConvertor";
 import TicTacToe from "./src/features/tictacToe";
+import MusicPlayer from "./src/features/musicPlayer";
+import { playBackService } from "./src/service/musicPlayer";
+import TrackPlayer from 'react-native-track-player';
 
 const App = ():JSX.Element => {
   return(
@@ -18,17 +21,20 @@ const App = ():JSX.Element => {
      {/* <BackgroundChanger /> */}
      {/* <DiceRolling /> */}
      {/* <CurrencyConvertor /> */}
-     <TicTacToe />
+     {/* <TicTacToe /> */}
+     <MusicPlayer />
     </SafeAreaView>
   );
 }
+
+TrackPlayer.registerPlaybackService(() => playBackService);
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    backgroundColor: '#738085ff',
+    backgroundColor: '#ffffffff',
   },
   text: {
     fontSize: 40,   // instead of 800 (800 is way too large)
@@ -36,7 +42,7 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     margin: 10,
     height: 100,
-    color: '#ffff',
+    // color: '#ffff',
   },
   });
 
